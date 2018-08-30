@@ -1,0 +1,25 @@
+
+
+<div class="col-md-6">
+  <h2>Mobile Details</h2>
+  <button class="btn btn-danger" (click)="addMobile()">Add Mobile</button>
+  <table class="table table-stripped">
+    <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mobile of mobiles">
+        <td class="hidden">{{mobile.id}}</td>
+        <td>{{mobile.name}}</td>
+        <td>{{mobile.cost}}</td>
+        <td><button class="btn btn-danger" (click)="deleteMobile(mobile)">Delete</button>
+        <button class="btn btn-danger" (click)="editMobile(mobile)" style="margin-left: 20px;">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

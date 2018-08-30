@@ -1,0 +1,7 @@
+
+{
+  "/mobiles/*": {
+    "target": "http://localhost:8090/mobiles",
+    "secure": false
+  }
+}
